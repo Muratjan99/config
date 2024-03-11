@@ -8,7 +8,7 @@
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 *******************************
 [rewrite_local]
-^https://club.lirenos.com url script-request-header test.js
+^https://club.lirenos.com url script-request-header https://raw.githubusercontent.com/Muratjan99/config/master/scripts/yuedong.js
 
 [mitm] 
 hostname = club.lirenos.com
