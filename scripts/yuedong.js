@@ -8,16 +8,13 @@
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 *******************************
 [rewrite_local]
-^https://club.lirenos.com url script-request-header https://raw.githubusercontent.com/Muratjan99/config/master/scripts/yuedong.js
+^https://club.lirenos.com url script-request-header https://gitee.com/mrt99/config/raw/master/scripts/yuedong.js
 
 [mitm] 
 hostname = club.lirenos.com
 *******************************/
-$request.scheme, $request.method, $request.url, $request.path, $request.headers
-
+$request.headers
 var modifiedHeaders = $request.headers;
 modifiedHeaders['Cookie'] = 'JSESSIONID=D5B0E672C15FE1FF365CA8B8DBCFB16A; Path=/; Secure; HttpOnly';
 
-$done({path: modifiedPath, headers : modifiedHeaders});
-// $done({path : modifiedPath});
-// $done({}); // Not changed.
+$done({headers : modifiedHeaders});
