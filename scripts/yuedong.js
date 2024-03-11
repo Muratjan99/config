@@ -13,7 +13,6 @@
 [mitm] 
 hostname = club.lirenos.com
 *******************************/
-$request.headers
 var modifiedHeaders = $request.headers;
 modifiedHeaders['Cookie'] = 'JSESSIONID=D5B0E672C15FE1FF365CA8B8DBCFB16A; Path=/; Secure; HttpOnly';
 
