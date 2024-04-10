@@ -1,0 +1,15 @@
+# export JAVA_HOME=/usr/local/java
+# export PATH=$PATH:$JAVA_HOME/bin:/usr/sbin/;
+# export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar;
+# 代理配置
+export PROXY="http://219.245.186.151:7890"
+# alias 配置
+alias zimrc="vim ~/.zimrc"
+alias zin="zimfw install"
+alias vzrc="vim ~/.zshrc"
+alias svrc="source ~/.zshrc"
+alias vvrc="vim ~/.vimrc"
+alias szrc="source ~/.zshrc"
+alias c="clear"
+alias pon="export http_proxy="$PROXY" && export https_proxy="$PROXY" && export ftp_proxy="$PROXY"&& export socks_pro    xy="$PROXY" && echo -e "开启代理$PROXY""
+alias poff="unset ALL_PROXY && unset http_proxy && unset https_proxy && echo -e "已关闭代理""
